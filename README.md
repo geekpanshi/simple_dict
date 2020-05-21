@@ -3,7 +3,8 @@
 ----
 
 ### 使用方法：
-`$ python abc.py [你要搜索的词]`
+1. `$ python abc.py [你要搜索的词]`
+2. 改别名 `$ alias abc='python /e/selfDatas/simple_dict/abc.py'` 然后用 `$ abc python`
 
 比如
 ```
@@ -38,6 +39,8 @@ swellmobsman        ,n.衣着讲究的小偷,扒手或骗子
 thief               ,n.小偷,贼
 thieves             ,n.pl.小偷
 ```
+
+
 
 ### TODO LIST：
 
