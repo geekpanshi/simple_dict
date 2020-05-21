@@ -2,14 +2,30 @@
 > 一个包含 10 万单词支持中英文搜索的简单词典，可以通过连接 mysql 数据库使用，也可以本地使用。
 ----
 
-### 使用方法：
-1. `$ python abc.py [你要搜索的词]`
-2. 改别名 `$ alias abc='python /e/selfDatas/simple_dict/abc.py'` 然后用 `$ abc python`
+### 安装和使用方法
 
-比如
+#### 安装方法
+`$ git clone https://github.com/geekpanshi/simple_dict.git simple_dict`
+
+#### 使用方法
+1. `$ python abc.py [你要搜索的词]`
+2. 改别名 ：
+2.1 一次性别名 `$ alias abc='python [your simple_dict path]/abc.py'` 然后用 `$ abc python`
+2.2 永久性别名
+```
+$ echo alias abc='python [your simple_dict path]/abc.py'>>~/.bashrc
+$ source ~/.bashrc
+```
+
+### 3. 使用举例
+#### 3.1 没有别名的情况下使用
+`$ python [your simple_dict path]/abc.py python`
+`$ python [your simple_dict path]/abc.py 小偷`
+
+#### 3.2 有别名的情况下使用
 ```
 GeekPanshi MINGW64 /e/selfDatas/simple_dict (master)
-$ python abc.py python
+$ abc python
 
         Search by Local Datas
 
@@ -21,7 +37,7 @@ pythonic            ,adj.神谕的,预言的,大蟒似的
 ```
 ```
 GeekPanshi MINGW64 /e/selfDatas/simple_dict (master)
-$ python abc.py 小偷
+$ abc 小偷
 
         Search by Local Datas
 
@@ -39,8 +55,6 @@ swellmobsman        ,n.衣着讲究的小偷,扒手或骗子
 thief               ,n.小偷,贼
 thieves             ,n.pl.小偷
 ```
-
-
 
 ### TODO LIST：
 
