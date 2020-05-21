@@ -69,4 +69,7 @@ def Main(search_world):
         get_worlds_info_by_local(search_world)
 
 if __name__ == "__main__":
+    if len(sys.argv) < 2:
+        print(" \nmust have a word to be search！！")
+        sys.exit()
     Main(sys.argv[1])
